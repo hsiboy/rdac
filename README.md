@@ -1,6 +1,6 @@
 # RDAC to WAV Decoding
 
-## RDAC - Roalnd Digital Audio Compression
+## RDAC - Roland Digital Audio Compression
 
 A collection of C and Go code to decode Roland's old RDAC audio encoding format used in their VS line of recorders. 
 
