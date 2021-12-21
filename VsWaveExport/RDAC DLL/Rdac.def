@@ -1,0 +1,12 @@
+LIBRARY RDAC
+
+EXPORTS
+
+Decode		@1
+;Encode		@2
+ShrinkTo24	@3
+ShrinkTo16	@4
+CastFat		@5
+DrawAllClusters @6
+HighlightClusters @7
+SwapBytes @8
