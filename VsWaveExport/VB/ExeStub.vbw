@@ -1,0 +1,10 @@
+clsVSProject = 88, 88, 858, 542, 
+clsTrack = 220, 220, 1009, 665, 
+clsEvent = 198, 198, 987, 643, 
+clsDirectoryEntry = 176, 176, 965, 621, 
+modGeneralFunctions = 132, 132, 966, 586, 
+modDriveAccess = 44, 44, 814, 498, 
+modExport = 66, 66, 900, 520, 
+frmProgress = 44, 44, 814, 498, , 66, 66, 836, 520, C
+clsPartition = 198, 198, 1032, 652, 
+clsProgressbar = 198, 198, 981, 652, 
