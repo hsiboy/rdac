@@ -65,14 +65,14 @@ A window named ‘Output:’ appears with strange messages
 In this case some entries in the EVENTLST are not as they usually should be. The EVENTLST format is not 100% understood, i would be interested to look into these messages.
 
 ## History:
-V1.24a: tested and fixed 880EX, 890, fixed a bug that caused one cluster of silence written if a take was exactly a multiple of 32768 samples long. Fixed length display and estimate calculation. Released 01.11.2007
-V1.23a: added untested support for 880VX and 890 assuming the file format is identical to 880/880EX. Released 16.Aug.2007. Click here for the source code (rename to zip)
-V1.22a: bugfixed: Partition Analysis Wave Recovery, SFX Mode, added check for cluster loops causing potential deadlock, Samplerate code in the Songfile now only uses lower 4 Bits. Released 04.July 2007
-V1.21a: fixed a bug in CD-R ripped file mode. Released 16.May 2007
-V1.2a: released 12.May 2007 added: Partition Analysis, Partition Shuffler, Self Extracting executeable, Bears CD ripper. Several improvements including Eventlist interpretation, RDAC decoding etc. V1.15b: fixed a bug in CD-R ripped file mode
-V1.14b: added drag and drop support for CD-R ripped Files, tested filebased 1680, added untested 880EX
-V1.13b: added, but not tested(!) FAT12 support; added and tested VS1880 support
-V1.12b: added, but not tested(!) 1680 family support
-V1.11b: removed a bug in export start/stop time, and added another GUI gimick
+* V1.24a: tested and fixed 880EX, 890, fixed a bug that caused one cluster of silence written if a take was exactly a multiple of 32768 samples long. Fixed length display and estimate calculation. Released 01.11.2007
+* V1.23a: added untested support for 880VX and 890 assuming the file format is identical to 880/880EX. Released 16.Aug.2007. Click here for the source code (rename to zip)
+* V1.22a: bugfixed: Partition Analysis Wave Recovery, SFX Mode, added check for cluster loops causing potential deadlock, Samplerate code in the Songfile now only uses lower 4 Bits. Released 04.July 2007
+* V1.21a: fixed a bug in CD-R ripped file mode. Released 16.May 2007
+* V1.2a: released 12.May 2007 added: Partition Analysis, Partition Shuffler, Self Extracting executeable, Bears CD ripper. Several improvements including Eventlist interpretation, RDAC decoding etc. V1.15b: fixed a bug in CD-R ripped file mode
+* V1.14b: added drag and drop support for CD-R ripped Files, tested filebased 1680, added untested 880EX
+* V1.13b: added, but not tested(!) FAT12 support; added and tested VS1880 support
+* V1.12b: added, but not tested(!) 1680 family support
+* V1.11b: removed a bug in export start/stop time, and added another GUI gimick
 
-If you want to find out more about the good library, click here: www.thegoodlibrary.com
+
