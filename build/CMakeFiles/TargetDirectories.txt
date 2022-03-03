@@ -1,0 +1,3 @@
+/Users/stuart.taylor/repos/rdac/build/CMakeFiles/rdac2wav.dir
+/Users/stuart.taylor/repos/rdac/build/CMakeFiles/edit_cache.dir
+/Users/stuart.taylor/repos/rdac/build/CMakeFiles/rebuild_cache.dir

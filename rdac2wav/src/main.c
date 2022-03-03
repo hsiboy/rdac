@@ -30,6 +30,15 @@ int isSupportedBitDepth(int bitDepth);
 long fsize(const char *const name);
 
 
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
+#define ANSI_COLOR_YELLOW  "\x1b[33m"
+#define ANSI_COLOR_BLUE    "\x1b[34m"
+#define ANSI_COLOR_MAGENTA "\x1b[35m"
+#define ANSI_COLOR_CYAN    "\x1b[36m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+
+
 //*****************************************************************************
 int main(int argc, char **argv)
 {
@@ -87,17 +96,17 @@ int main(int argc, char **argv)
         !isSupportedClusterSize(clusterSize)) {
 
         printf("\n");
-        printf("**********************************************************\n");
-        printf("*                                                        *\n");
-        printf("*    RDAC to Wav File Converter (Version 0.99)           *\n");
-        printf("*                                                        *\n");
-        printf("*        Copyright Randy Gordon (randy@integrand.com)    *\n");
-        printf("*                                                        *\n");
-        printf("**********************************************************\n");
+        printf(ANSI_COLOR_CYAN "    ╔════════════════════════════════════════════════════════╗\n");
+        printf("    ║                                                        ║\n");
+        printf("    ║       RDAC to Wav File Converter (Version 0.99)        ║\n");
+        printf("    ║                                                        ║\n");
+        printf("    ║      Copyright Randy Gordon (randy@integrand.com)      ║\n");
+        printf("    ║                                                        ║\n");
+        printf("    ╚════════════════════════════════════════════════════════╝\n");
+        printf(ANSI_COLOR_RESET "\n");
+        printf(" Usage: rdac2wav [options] <input_file> <output_file>\n\n");
         printf("\n");
-        printf("Usage: rdac2wav [options] <input_file> <output_file>\n\n");
-        printf("\n");
-        printf("where options include:\n");
+        printf(" options include:\n");
         printf("\n");
         printf("    -m <rdac_mode>    : MTP,MT1,MT2,VSR,\n");
         printf("                        M16,M24,CDR             (default: MTP)\n");
@@ -127,11 +136,11 @@ void convertMTP(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -175,11 +184,11 @@ void convertVSR(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -235,11 +244,11 @@ void convertMT1(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -284,11 +293,11 @@ void convertMT2(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED"Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -356,11 +365,11 @@ void convertM16(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -401,11 +410,11 @@ void convertM24(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 
@@ -468,11 +477,11 @@ void convertCDR(char *inFileName, char *outFileName, int sampleRate, int bitDept
     FILE *fout = fopen(outFileName, "wb");
 
     if (fin == NULL) {
-        printf("Unable to open input file: %s.\n", inFileName);
+        printf(ANSI_COLOR_RED "Unable to open input file: %s.\n" ANSI_COLOR_RESET, inFileName);
         exit(1);
     }
     if (fout == NULL) {
-        printf("Unable to open output file: %s.\n", outFileName);
+        printf(ANSI_COLOR_RED "Unable to open output file: %s.\n" ANSI_COLOR_RESET, outFileName);
         exit(1);
     }
 

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/stuart.taylor/repos/rdac/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -Dstricmp=strcasecmp  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -o CMakeFiles/rdac2wav.dir/src/wav.c.o -c /Users/stuart.taylor/repos/rdac/rdac2wav/src/wav.c",
+  "file": "/Users/stuart.taylor/repos/rdac/rdac2wav/src/wav.c"
+},
+{
+  "directory": "/Users/stuart.taylor/repos/rdac/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -Dstricmp=strcasecmp  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -o CMakeFiles/rdac2wav.dir/src/decode.c.o -c /Users/stuart.taylor/repos/rdac/rdac2wav/src/decode.c",
+  "file": "/Users/stuart.taylor/repos/rdac/rdac2wav/src/decode.c"
+},
+{
+  "directory": "/Users/stuart.taylor/repos/rdac/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -Dstricmp=strcasecmp  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -o CMakeFiles/rdac2wav.dir/src/main.c.o -c /Users/stuart.taylor/repos/rdac/rdac2wav/src/main.c",
+  "file": "/Users/stuart.taylor/repos/rdac/rdac2wav/src/main.c"
+}
+]
